@@ -1,0 +1,33 @@
+1. Search_item
+
+- Search by product_code or product_name
+- If empty, return df.Dataframe
+- show product_code, product_name, quantity, rack location.
+
+2. Search for rack_content
+
+- Search by Section, Column, and Level
+- If empty, return df.Dataframe
+- show product_code, product_name, quantity, rack location.
+
+3. Add_item
+- Accept product code or product name, quantity, and rack location (section, column, level) as inputs.
+
+- Check if the item exists in the given rack location.
++ If it does, update the quantity.
++ If it does not, add a new entry to the DataFrame.
+
+- Save the updated DataFrame back to the Excel file.
+
+4. Remove item
+- Accept a rack location (section, column, level) and either a product code or product name, and quantity to be removed as inputs.
+
+- Find the item in the given rack location.
+
+- Subtract the specified quantity from the item.
++ If the quantity becomes 0 or less, remove the item from the DataFrame.
+
+- Save the updated DataFrame back to the Excel file.
+
+- What if the quantity is removed to negative??
+
